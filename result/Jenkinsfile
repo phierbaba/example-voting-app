@@ -28,7 +28,7 @@ pipeline{
               changeset "**/result/**"
             }
             steps{
-                echo "Testing result app..."
+                echo "Testing result app......"
                 dir("result"){
                   sh 'npm test'
                 }
