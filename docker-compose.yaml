@@ -6,7 +6,7 @@ vote:
     - 5000:80
   links:
     - redis:redis
-    
+
 db:
   image: postgres:9.4
 
@@ -19,6 +19,8 @@ result:
 
 worker:
   image: phierbaba/worker:latest
+  ports:
+    - 8000:80
   links:
     - redis:redis
     - db:db
