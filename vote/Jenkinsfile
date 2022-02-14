@@ -15,7 +15,7 @@ pipeline {
             changeset "**/vote/**"
           }
           steps{
-            echo 'Compiling vote app'
+            echo 'Compiling vote app now'
             dir('vote'){
               sh 'pip install -r requirements.txt'
             }
